@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>Welcome to the Spin Wheel Game!</h2>
+  <p>This is a simple spin wheel game where you can win various rewards. Click the "Spin" button to try your luck!</p>
+
+  <div class="splash-screen">
+    <img src="{{ url_for('static', filename='assets/avatar.png') }}" alt="Game Logo">
+    <p>Click to start the game!</p>
+  </div>
+{% endblock %}
