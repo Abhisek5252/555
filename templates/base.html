@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spin Wheel Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='games.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Spin Wheel Game</h1>
+
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <script src="{{ url_for('static', filename='coin.js') }}"></script>
+    <script src="{{ url_for('static', filename='hamster.js') }}"></script>
+    <script src="{{ url_for('static', filename='splash.js') }}"></script>
+    <script src="{{ url_for('static', filename='utils.js') }}"></script>
+    <script src="{{ url_for('static', filename='wheel.js') }}"></script>
+</body>
+</html>
